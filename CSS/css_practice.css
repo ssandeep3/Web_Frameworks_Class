@@ -1,0 +1,28 @@
+#para2{
+    color:blue;
+}
+.cls1{
+    border: 15px solid black;
+}
+p{
+    border: 2px dashed green;
+    background-color: lightgray;
+    color: brown;
+}
+
+h3{
+    color:black;
+}
+h3{
+    color:red;
+    background-image: url("/images/f5.png");
+    background-repeat: no-repeat;
+    border:10px solid black;
+    margin: 100px 20px;
+    /* top left bottom right */
+}
+#img1{
+    width: 200px;
+    /* height: 200px; */
+    position:;
+}

@@ -1,0 +1,22 @@
+#backimg{
+    /* position: fixed; */
+    background-image: url(../images/f2.jpg);
+    margin-bottom: 400px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 400px;
+}
+/* .frontimg{
+    position: relative;
+    margin: 100px 0px;
+} */
+p{
+    height: 100px;
+    width: 100px;
+    border: 5px solid red;
+    overflow: hidden;
+}
+img{
+    height: inherit;
+    width: inherit;
+}
