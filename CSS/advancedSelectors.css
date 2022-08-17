@@ -1,0 +1,19 @@
+/* *{
+    color:red;
+    border: 5px solid blue;
+} */
+
+p>span{
+    color: green;
+    background-color: lightcoral;
+}
+/* immediate sibling */
+span+img{
+    height: 50px;
+    border: 10px solid red;
+}
+/* all siblings */
+span~img{
+    height: 50px;
+    border: 10px solid red;
+}

@@ -1,0 +1,19 @@
+input[value="hide"]:checked ~ .myimg{
+    display: none;
+}
+img{
+    border: 10px solid red;
+    margin: 100px 50px 150px;
+    padding: 10%;
+}
+#colorbox{
+    background-color: red;
+    opacity: 0.8;
+}
+body{
+    /* background-image: url("../images/f11.jpg");
+    background-repeat: repeat; */
+    /* background-color: #2874f0; */
+    background-color: rgb(255,0,0);
+    background-color: rgba(255,0,0,0.5);
+}

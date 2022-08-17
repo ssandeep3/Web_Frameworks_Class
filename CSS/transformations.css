@@ -1,0 +1,17 @@
+img{
+    width:200px;
+    border: 10px dashed red;
+    border-radius: 50%;
+}
+.animation{
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(1, 0.86, 0.44, .89);
+    
+}
+.animation:hover{
+    /* transform: translate(100px,100px); */
+    /* transform: rotate(180deg); */
+    /* transform: scale(150%); */
+    transform: scaleX(200%);
+    /* transform: scaleY(200%); */
+}
