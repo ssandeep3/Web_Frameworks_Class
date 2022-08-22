@@ -1,0 +1,39 @@
+*{
+    border:none;
+}
+.row{
+    width: 100%;
+    border: 5px solid blue;
+    display: flex;
+    /* float: left; */
+    justify-content: space-between;
+}
+.col{
+    width: 30%;
+    border: 5px solid green;
+    /* display: flex; */
+    /* float: left; */
+}
+.mid{
+    width: 40%;
+    border: 5px solid green;
+    /* display: flex; */
+    /* float: left; */
+}
+figure{
+    width: 90%;
+}
+img{
+    width: inherit;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    background-color: aqua;
+    width:50px;
+}
+li:hover{
+    background-color: antiquewhite;
+}

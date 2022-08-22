@@ -1,0 +1,32 @@
+img{
+    width: 100px;
+    animation: myanimation;
+    animation-duration: 5s;
+    position: absolute;
+    left: 45%;
+    bottom: 0px;
+    animation-iteration-count: infinite;
+}
+@keyframes myanimation {
+    0%{
+        left:45%;
+        bottom: 0px;
+    }
+    25%{
+        left:87%;
+        bottom: 45%;
+        transform: rotate(720deg);
+    }
+    50%{
+        left: 45%;
+        bottom: 83%;
+    }
+    75%{
+        left: 0px;
+        bottom: 45%;
+    }
+    100%{
+        left:45%;
+        bottom: 0px;
+    }
+}
