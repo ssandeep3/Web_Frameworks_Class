@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/tictactoe.js"></script>
+    <style>
+        button{
+            height:100px;
+            width: 100px;
+            font-size: 36px;
+        }
+        .row{
+            display: inline-block;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <div><button id="1" onclick="buttonPress(id)"></button></div>
+        <div><button id="2" onclick="buttonPress(id)"></button></div>
+        <div><button id="3" onclick="buttonPress(id)"></button></div>
+    </div>
+    <div class="row">
+        <div><button id="4" onclick="buttonPress(id)"></button></div>
+        <div><button id="5" onclick="buttonPress(id)"></button></div>
+        <div><button id="6" onclick="buttonPress(id)"></button></div>
+    </div>
+    <div class="row">
+        <div><button id="7" onclick="buttonPress(id)"></button></div>
+        <div><button id="8" onclick="buttonPress(id)"></button></div>
+        <div><button id="9" onclick="buttonPress(id)"></button></div>
+    </div>
+    <br>
+    The winner is: <span id="win"></span>
+</body>
+</html>
