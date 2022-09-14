@@ -1,0 +1,39 @@
+p{
+    border: 5px dashed red;
+    background-color: lightblue;
+}
+@media(min-width:768px){
+    p{
+        border: 10px dotted blue;
+        background-color: lightsalmon;
+    }
+}
+@media(min-width:900px){
+    p{
+        border: 20px solid green;
+        background-color: lightgreen
+    }
+}
+@media(max-width:400px){
+    p{
+        border: 1px solid red;
+        background-color: lightyellow;
+    }
+}
+.row{
+    display: block;
+    width: 90%;
+}
+.col{
+    border:5px solid green;
+    width: 100%;
+    margin: 5px;
+}
+@media(min-width:700px){
+    .row{
+        display: flex;
+    }
+    .col{
+        width: 30%;
+    }
+}
