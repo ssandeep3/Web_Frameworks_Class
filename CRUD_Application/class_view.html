@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "JS/controller.js"></script>
+    <script src="JS/ClassData.js"></script>
+    <script src="JS/ClassModel.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 class="display-3">B.Tech. Classes</h1>
+    </div>
+    <div>
+        <div class="input-group mb-3">
+            <label for="" class="input-group-text">Class Name</label>
+            <input type="text" name="" id="class" placeholder="Class Name" class="form-control">
+        </div>
+        <div class="input-group mb-3">
+            <label for="" class="input-group-text">Batch</label>
+            <input type="text" placeholder="Batch" id="batch" class="form-control">
+        </div>
+        <div class="input-group mb-3">
+            <label for="" class="input-group-text">No. of Students</label>
+            <input type="number" name="" id="students" class="form-control">
+        </div>
+        <div class="input-group mb-3">
+            <label for="" class="input-group-text">Branch</label>
+            <input type="text" name="" id="branch" placeholder="Branch" class="form-control">
+        </div>
+        <div>
+            <button onclick="addrec()">Add Record</button>
+            <button>Delete Record</button>
+        </div>
+        <div>
+            <table class="table table-hover table-striped">
+                <thead>
+                    <td>S. No.</td>
+                    <td>Class</td>
+                    <td>Batch</td>
+                    <td>No. of Students</td>
+                    <td>Branch</td>
+                </thead>
+                <tbody class="tbd"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
