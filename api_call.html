@@ -8,7 +8,7 @@
         
         function searchgif(){
             var searchterm = document.getElementById("searchterm").value;
-            var url = `http://api.giphy.com/v1/gifs/search?q=${searchterm}&api_key=ULaCrbj9R3S5tDfTvCpEUmTtYgT4ssWY&limit=5`
+            var url = `http://api.giphy.com/v1/gifs/search?q=${searchterm}&api_key={YOUR API KEY}&limit=5`
             console.log(url);
             var promise = fetch(url);
             promise.then(respose => {
