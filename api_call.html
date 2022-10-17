@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        
+        function searchgif(){
+            var searchterm = document.getElementById("searchterm").value;
+            var url = `http://api.giphy.com/v1/gifs/search?q=${searchterm}&api_key=ULaCrbj9R3S5tDfTvCpEUmTtYgT4ssWY&limit=5`
+            console.log(url);
+            var promise = fetch(url);
+            promise.then(respose => {
+                respose.json().then(data => {
+                    var imgdiv = document.querySelector("#gifimg");
+                    for(var i=0;i<5;i++){
+                        let img = document.createElement("img");
+                        img.src=data.data[i].images.original.url;
+                        imgdiv.appendChild(img);
+                    }                    
+                }).catch(err=>{
+                    console.log("Invalid JASON...");
+                });
+
+            }).catch(err=>{
+                console.log("Server Error...");
+            });
+            console.log("Code after fetch...");
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="searchterm">
+    <button onClick="searchgif()">Search</button>
+    <div id="gifimg">
+
+    </div>
+</body>
+</html>
