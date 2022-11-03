@@ -1,0 +1,14 @@
+<h2 class="bg-primary">Angular Project</h2>
+<span>{{count}}</span>
+<span>{{title}}</span>
+<img [src]="imgPath" alt="Image">
+<br>
+<button class="btn btn-secondary"(click)="PrintName($event)">OK</button>
+
+<input type="text" [(ngModel)]="inputBox" (keydown)="inputClick()">
+<br>
+<ul>
+    <li *ngFor ="let student of students">
+        {{student.name}}: {{student.rollno}}
+    </li>
+</ul>
