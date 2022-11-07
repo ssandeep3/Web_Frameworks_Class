@@ -1,0 +1,9 @@
+h2{
+    background-color: lightgrey;
+}
+img{
+    height: 200px;
+}
+.imgbdr{
+    border: 10px red solid;
+}

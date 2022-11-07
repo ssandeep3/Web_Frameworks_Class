@@ -1,0 +1,22 @@
+<h2 class="bg-primary">Angular Project</h2>
+<span>{{count}}</span>
+<span>{{title}}</span>
+<img [src]="imgPath" alt="Image" [ngClass]="AddRemoveClass()">
+<br>
+<button class="btn btn-secondary"(click)="PrintName($event)">OK</button>
+
+<input type="text" [(ngModel)]="inputBox" (keydown)="inputClick()">
+<br>
+<ul *ngIf ="3<5">
+    <li *ngFor ="let student of students">
+        {{student.name}}: {{student.rollno}}
+    </li>
+</ul>
+<button  (click) = "imageSizeChange()">Image Size</button>
+<div [ngSwitch]="imgSize">
+    <img src="assets/f3.jpg" style="width:50px" alt="Flower Picture" *ngSwitchCase="1">
+    <img src="assets/f3.jpg" style="width:500px;" alt="Flower Picture" *ngSwitchCase="2">
+</div>
+<button [ngStyle] = "AddRemoveStyle()">ngStyle Eg.</button>
+<!-- <button [ngClass] = "AddRemoveClass()">ngClass Example</button> -->
+
