@@ -1,0 +1,29 @@
+
+<app-second [childMsg] = "msg"></app-second>
+<h2 class="bg-primary">Angular Project</h2>
+<span>{{count}}</span>
+<span>{{title}}</span>
+<img [src]="imgPath" alt="Image" [ngClass]="AddRemoveClass()">
+<br>
+<button class="btn btn-secondary"(click)="PrintName($event)">OK</button>
+
+<input type="text" [(ngModel)]="inputBox" (keydown)="inputClick()">
+<br>
+<ul *ngIf ="3<5">
+    <li *ngFor ="let student of students">
+        {{student.name}}: {{student.rollno}}
+    </li>
+</ul>
+<button  (click) = "imageSizeChange()">Image Size</button>
+<div [ngSwitch]="imgSize">
+    <img src="assets/f4.jpg" style="width:50px" alt="Flower Picture" *ngSwitchCase="'one'">
+    <img src="assets/f4.jpg" style="width:500px;" alt="Flower Picture" *ngSwitchCase="'two'">
+</div>
+<!-- <button [ngStyle] = {"color":this.cl ? "red" : "blue"} >ngStyle Eg.</button> -->
+
+<button (click)="AddRemoveStyle()">Chnage Style</button>
+<!-- <button [ngClass] = "AddRemoveClass()">ngClass Example</button> -->
+<app-eg-comp (childVar) = "receMsg($event)"></app-eg-comp>
+<span>Msg:{{childMessage}}</span>
+<button (click) = "getServiceVar()">ServiceVar</button>
+<span>{{serviceVar}}</span>
