@@ -1,0 +1,30 @@
+<div>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Sports Product ID</th>
+                <th scope="col">Sports Product Name</th>
+                <th scope="col">Sports Product Details</th>
+                <th scope="col">Sports Product Price</th>
+                <th scopr="col">Sports Type</th>
+            </tr>
+        </thead>
+        <tr *ngFor = "let a of plist">
+            <td>
+                {{a["pid"]}}
+            </td>
+            <td>
+                {{a["pname"]}}
+            </td>
+            <td>
+                {{a["pdetails"]}}
+            </td>
+            <td>
+                {{a["price"]}}
+            </td>
+            <td>
+                {{a["ptype"]}}
+            </td>
+        </tr>
+    </table>
+</div>
